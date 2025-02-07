@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Github User</string>
+    <string name="image_avatar">Image Avatar</string>
+    <string name="github_username">Github Username</string>
+    <string name="github_account_name">Github Account Name</string>
+    <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="broken_link">Broken Link</string>
+    <string name="icon">icon</string>
+    <string name="label">Label</string>
+    <string name="repo_repository">Repo/Repository</string>
+    <string name="more_repositories">More Repositories</string>
+    <string name="search">Search</string>
+</resources>

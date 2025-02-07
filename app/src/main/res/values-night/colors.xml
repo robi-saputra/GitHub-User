@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#19376D</color>
+    <color name="colorPrimaryVariant">#576CBC</color>
+    <color name="colorSecondary">#80CBC4</color>
+    <color name="colorSecondaryVariant">#004D40</color>
+    <color name="colorBackground">#1E1E1E</color>
+    <color name="colorSurface">#272727</color>
+    <color name="colorOnPrimary">#09090B</color>
+    <color name="colorOnSecondary">#18181B</color>
+    <color name="colorOnBackground">#E0E0E0</color>
+    <color name="colorOnSurface">#E0E0E0</color>
+    <color name="colorOnSurfaceSecondary">#C4C4C4</color>
+
+    <!-- Default color (selected state) -->
+    <color name="colorDefaultPressed">#1E1E1E</color>
+    <color name="colorDark">#18181B</color>
+
+    <!-- Error Colors -->
+    <color name="colorError">#CF6679</color> <!-- Light Red -->
+    <color name="colorErrorPressed">#B00020</color> <!-- Darker Red -->
+
+    <!-- Success Colors -->
+    <color name="colorSuccess">#66BB6A</color> <!-- Light Green -->
+    <color name="colorSuccessPressed">#388E3C</color> <!-- Darker Green -->
+
+    <!-- Info Colors -->
+    <color name="colorInfo">#64B5F6</color> <!-- Light Blue -->
+    <color name="colorInfoPressed">#1976D2</color> <!-- Darker Blue -->
+
+    <!-- Warning Colors -->
+    <color name="colorWarning">#FFD54F</color> <!-- Light Amber -->
+    <color name="colorWarningPressed">#FFA000</color> <!-- Darker Amber -->
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#FFFFFF</color> <!-- White -->
+    <color name="textSecondary">#BDBDBD</color> <!-- Light Gray -->
+    <color name="textOnPrimary">#000000</color> <!-- Black -->
+    <color name="textOnSecondary">#000000</color> <!-- Black -->
+    <color name="textOnError">#000000</color> <!-- Black -->
+    <color name="textOnSuccess">#000000</color> <!-- Black -->
+    <color name="textOnInfo">#000000</color> <!-- Black -->
+    <color name="textOnWarning">#000000</color> <!-- Black -->
+</resources>

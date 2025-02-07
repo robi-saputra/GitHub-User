@@ -1,0 +1,82 @@
+[versions]
+agp = "8.7.1"
+ksp = "2.1.0-1.0.29"
+kotlin = "2.1.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
+hilt = "2.49"
+glide = "4.16.0"
+shimmer = "0.5.0"
+squareupRetrofit2 = "2.11.0"
+squareupOkhttp = "4.12.0"
+multidex = "2.0.1"
+viewbinding = "8.8.0"
+navigationRuntimeKtx = "2.8.5"
+navigationUiKtx = "2.8.5"
+navigationFragmentKtx = "2.8.5"
+threetenabp = "1.4.4"
+splashScreen = "1.0.1"
+swiperefreshlayout = "1.1.0"
+flexboxVersion = "3.0.0"
+runner = "1.5.2"
+rules = "1.5.0"
+mockito = "5.5.0"
+mockitoKotlin = "5.1.0"
+fragmentTesting = "1.8.5"
+kotlinxCoroutinesTest = "1.7.1"
+archCoreTesting = "2.2.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
+androidx-test-rules = { group = "androidx.test", name = "rules", version.ref = "rules" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+mockito-android = { group = "org.mockito", name = "mockito-android", version.ref = "mockito" }
+mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockitoKotlin"}
+mockito-inline = { group = "org.mockito", name = "mockito-inline", version.ref = "mockitoKotlin"}
+fragment-testing = { group = "androidx.fragment", name = "fragment-testing", version.ref = "fragmentTesting" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest"}
+androidx-arch-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "archCoreTesting"}
+
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+multidex = { group = "androidx.multidex", name = "multidex", version.ref = "multidex" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-viewbinding = { group = "androidx.databinding", name = "viewbinding", version.ref = "viewbinding" }
+androidx-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashScreen"}
+androidx-swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefreshlayout" }
+androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+squareup-adapter-rxjava3 = { group = "com.squareup.retrofit2", name = "adapter-rxjava3", version.ref = "squareupRetrofit2" }
+squareup-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "squareupRetrofit2" }
+squareup-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "squareupRetrofit2" }
+squareup-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "squareupOkhttp" }
+squareup-okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "squareupOkhttp" }
+google-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+google-hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+google-dagger-compiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "hilt" }
+google-devtools-ksp = { group = "com.google.devtools.ksp", name = "symbol-processing-api", version.ref = "ksp" }
+jakewharton-threetenabp = { group = "com.jakewharton.threetenabp", name = "threetenabp", version.ref = "threetenabp"}
+github-bumptech-glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+facebook-shimmer = { group = "com.facebook.shimmer", name = "shimmer", version.ref = "shimmer"}
+flexbox = { group = "com.google.android.flexbox", name = "flexbox", version.ref = "flexboxVersion" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt"  }
+google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref="ksp" }
+

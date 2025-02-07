@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--Exception-->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/exceptionLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="100dp"
+                            android:contentDescription="@string/broken_link"
+                            android:src="@drawable/ic_broken_link" />
+
+                        <TextView
+                            android:id="@+id/tvTittle"
+                            style="@style/TextBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/dummy_text" />
+
+                        <TextView
+                            android:id="@+id/tvDescription"
+                            style="@style/TextItalic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:text="@string/dummy_text" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <!--Shimmer-->
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <include layout="@layout/shimmer_repository_item" />
+
+                            <include layout="@layout/shimmer_repository_item" />
+
+                            <include layout="@layout/shimmer_repository_item" />
+
+                            <include layout="@layout/shimmer_repository_item" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <!--Content-->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvRepository"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_repository" />
+
+                    <!--Shimmer Footer-->
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/footer_shimmer_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <include layout="@layout/shimmer_repository_item" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
